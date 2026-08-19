@@ -23,9 +23,9 @@ subtitle                 : "Cutting sensor cost without losing the signal: a hig
 name                     : "Chengdong Weng"
 description              : "Research blog on low-cost, low-resolution pressure-mat sleep-posture sensing."
 url                      : "https://chengdongweng.github.io"
+teaser                   : "/assets/images/default-teaser.jpg"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ChengdongWeng/ChengdongWeng.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
