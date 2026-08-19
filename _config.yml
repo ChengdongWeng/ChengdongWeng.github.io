@@ -113,11 +113,11 @@ analytics:
 
 
 # Site Author
-  avatar           : "/assets/images/avatar.jpg"
+author:
   name             : "Chengdong Weng"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "High school researcher working on sleep-posture classification from pressure sensor mats."
-  location         :
+  location         : "United States"
   email            :
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
