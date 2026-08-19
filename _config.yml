@@ -113,7 +113,7 @@ analytics:
 
 
 # Site Author
-author:
+  avatar           : "/assets/images/avatar.jpg"
   name             : "Chengdong Weng"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "High school researcher working on sleep-posture classification from pressure sensor mats."
