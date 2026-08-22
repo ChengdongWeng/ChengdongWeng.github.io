@@ -117,13 +117,21 @@ author:
   name             : "Chengdong Weng"
   avatar           : "/assets/images/avatar.jpg"
   bio              : "High school researcher working on sleep-posture classification from pressure sensor mats."
-  location         : "United States"
+  location         : "Beijing, China"
   email            :
-  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ChengdongWeng"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chengdongweng"
+    - label: "X (Twitter)"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/Chengdong_Weng"
+    - label: "Medium"
+      icon: "fab fa-fw fa-medium"
+      url: "https://medium.com/@chengdongweng"
 
 # Site Footer
 footer:
@@ -131,6 +139,15 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ChengdongWeng"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chengdongweng"
+    - label: "X (Twitter)"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/Chengdong_Weng"
+    - label: "Medium"
+      icon: "fab fa-fw fa-medium"
+      url: "https://medium.com/@chengdongweng"
   since: "2026"
 
 
