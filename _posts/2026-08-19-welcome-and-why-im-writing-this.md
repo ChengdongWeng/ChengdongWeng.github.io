@@ -1,6 +1,7 @@
----
+<img width="2059" height="1230" alt="image" src="https://github.com/user-attachments/assets/2dc4e837-d823-4082-8bc8-f8779957e937" />---
 title: "Start here: why I'm writing all of this down"
 date: 2026-08-19
+pinned: true
 categories:
   - blog
 tags:
