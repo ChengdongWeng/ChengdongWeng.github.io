@@ -1,4 +1,4 @@
-<img width="2059" height="1230" alt="image" src="https://github.com/user-attachments/assets/2dc4e837-d823-4082-8bc8-f8779957e937" />---
+---
 title: "Start here: why I'm writing all of this down"
 date: 2026-08-19
 pinned: true
@@ -9,7 +9,7 @@ tags:
 toc: false
 ---
 
-Hi, I'm Chengdong. I'm a high school student in the China, and I want to study computer science and engineering in college. This blog is where I'm going to write about a research project I've been doing on the side, from the very beginning to wherever it is now.
+Hi, I'm Chengdong. I'm a high school student in China, and I want to study computer science and engineering in college. This blog is where I'm going to write about a research project I've been doing on the side, from the very beginning to wherever it is now.
 
 Let me start with why I'm even doing this.
 
