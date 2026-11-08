@@ -16,6 +16,7 @@ minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
+date_format: "%B %-d, %Y"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
 title                    : "Chengdong's Sensing Sleep Research Blog"
 title_separator          : "-"
@@ -313,7 +314,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: true
       comments: # true
       share: true
       related: true
