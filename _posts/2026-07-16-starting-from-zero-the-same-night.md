@@ -1,6 +1,6 @@
 ---
-title: "Starting from zero, the same night"
-date: 2026-07-16 23:30:00
+title: "Starting from zero"
+date: 2026-07-16
 categories: blog
 tags: research
 toc: false
@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/default-teaser.jpg
 ---
 
-After the meeting I had a new plan and nothing to run it on. I was still a bit upset about radar, but sitting around wasn't going to help, so I spent the rest of the night setting up.
+I had a new plan and nothing to run it on. I was still a bit upset about radar, but sitting around wasn't going to help, so I spent a whole evening setting up.
 
 The first choice was where to run the code. Google Colab needs no installation and gives you free GPU time, which sounded nice. But this project was going to last months, I would be running the same code again and again, and I didn't want my work to depend on a browser tab that times out. I chose my own laptop.
 
@@ -27,7 +27,7 @@ conda create -n posture python=3.11
 conda activate posture
 ```
 
-An environment keeps this project's libraries separate from everything else on my laptop, like my VEX code. Inside it I installed NumPy, matplotlib, SciPy, scikit-learn, pandas, Jupyter, a couple of smaller tools, and PyTorch. I picked the CPU-only version of PyTorch even though my laptop has an NVIDIA GPU, because I didn't want to deal with GPU drivers on the first night. I switched later, once I actually needed it.
+An environment keeps this project's libraries separate from everything else on my laptop, like my VEX code. Inside it I installed NumPy, matplotlib, SciPy, scikit-learn, pandas, Jupyter, a couple of smaller tools, and PyTorch. I picked the CPU-only version of PyTorch even though my laptop has an NVIDIA GPU, because I didn't want to deal with GPU drivers on the first night. I could always switch later if I needed it.
 
 The final check printed what I wanted to see:
 
@@ -44,9 +44,9 @@ My first fix, `conda install "numpy<2"`, didn't do anything. Conda decided nothi
 conda install numpy=1.26.4 -y
 ```
 
-After that the output was clean. I'm still on NumPy 1.26.4 months later. Since that night I read warnings even when the code runs.
+After that the output was clean. I made a note to myself to read warnings even when the code runs.
 
-Then came the project folder: `C:\research documents\sleep-posture-resolution`, with four folders inside called `data`, `notebooks`, `src` and `results`. It's the most boring part of this post, but those four folders are still there and almost everything in the project lives in them. I also lost some time here going back and forth between File Explorer and the command line, and at one point I wasn't even sure where I was supposed to press Ctrl+V.
+Then came the project folder: `C:\research documents\sleep-posture-resolution`, with four folders inside called `data`, `notebooks`, `src` and `results`. It's the most boring part of this post, but every file in the project was going to go into one of those four folders, so I wanted them set up properly. I also lost some time here going back and forth between File Explorer and the command line, and at one point I wasn't even sure where I was supposed to press Ctrl+V.
 
 To check that everything worked together, I opened Jupyter and drew a fake pressure map, just a 32 by 64 grid of random numbers:
 
@@ -67,7 +67,7 @@ The last thing that night was the data. I started with PMD, the Pressure Map Dat
 
 Inside `experiment-i` there is one folder per person, S1 to S13, and each one has files `1.txt` to `17.txt`, one per posture. At first I couldn't even tell they were text files, because Windows hides file extensions by default. Each line in a file is one frame, one second of recording, with 2,048 numbers separated by tabs. S1's `1.txt` has 82 lines, so 82 seconds of one person lying still.
 
-My notes from that night say to reshape each line into 32 rows and 64 columns. That was wrong, and the mistake stayed in my code until late September. It gets its own post later.
+My note for the next step was to fold each line into 32 rows of 64 numbers and draw it.
 
-By then it was late, so I stopped. I hadn't drawn a single real pressure map yet. That waited until the next day.
+By then it was late. I still hadn't drawn a single real pressure map, and that would have to wait.
 

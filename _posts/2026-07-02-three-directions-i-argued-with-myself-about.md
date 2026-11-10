@@ -1,6 +1,6 @@
 ---
 title: "Three directions I argued with myself about"
-date: 2026-07-02
+date: 2026-07-04
 categories: blog
 tags: research
 toc: false
@@ -22,7 +22,7 @@ Wearables are the other big group. A chest strap measures breathing well, and lo
 
 Then there's the hospital version, a sleep study called polysomnography. It's the gold standard, but it means a night in a lab with sensors and wires attached all over you. Nobody does that every night at home.
 
-Pressure mats go under the sheet and measure how your body presses into the bed. You don't wear anything and there's no picture of you. I looked at them too, but the good ones have thousands of sensors and cost a lot, and they only feel what's touching the bed. At that point I had no idea pressure mats would end up being my whole project.
+Pressure mats go under the sheet and measure how your body presses into the bed. You don't wear anything and there's no picture of you. I looked at them too, but the good ones have thousands of sensors and cost a lot, and they only feel what's touching the bed.
 
 Radar seemed to get around most of these problems at once. It doesn't touch you. It doesn't make an image, so there's never a picture of your face or body anywhere, which matters a lot for something that sits in a bedroom. It works in the dark and through a blanket. And since it can pick up chest movements of a few millimeters, one sensor could in principle track breathing as well as posture.
 
@@ -44,4 +44,4 @@ So I ended up combining A and B. Train a model on a public dataset recorded with
 
 Writing all of this out side by side helped more than thinking about it in my head. Every option had something I wanted and something I couldn't get around. Once I could see that on one page, the question stopped being which idea sounded best and became which one I could actually finish.
 
-That was the plan I took into getting ready for the meeting. It didn't last very long.
+That was the plan I took into getting ready for the meeting.

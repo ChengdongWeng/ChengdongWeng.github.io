@@ -1,6 +1,6 @@
 ---
 title: "Start here: why I'm writing all of this down"
-date: 2026-08-19
+date: 2026-07-01
 pinned: true
 categories:
   - blog
@@ -9,28 +9,24 @@ tags:
 toc: false
 ---
 
-Hi, I'm Chengdong. I'm a high school student in China, and I want to study computer science and engineering in college. This blog is where I'm going to write about a research project I've been doing on the side, from the very beginning to wherever it is now.
+Hi, I'm Chengdong. I'm a high school student in China, and I want to study computer science and engineering in college. This blog is where I'm going to write about a research project I'm doing on the side, from the very beginning and as it goes.
 
 Let me start with why I'm even doing this.
 
-I've known for a while that I want to go into engineering and CS, but "wanting to" and "actually doing it" are pretty far apart. Homework and competitions teach you to solve problems that already have answers. Real research is different: nobody knows the answer yet, half the things you try don't work, and you spend a lot of time just figuring out what the question even is. I wanted to feel what that's actually like before college, not after. So I reached out, found a mentor (a postdoc researcher), and started a real project. This blog is partly a record for myself, and partly so that if you're a student thinking about doing something similar, you can see what it actually looks like, mess and all.
+I've known for a while that I want to go into engineering and CS, but "wanting to" and "actually doing it" are pretty far apart. Homework and competitions teach you to solve problems that already have answers. Real research is different: nobody knows the answer yet, half the things you try don't work, and you spend a lot of time just figuring out what the question even is. I wanted to feel what that's actually like before college, not after. So I reached out, found a mentor (a postdoc researcher), and at the end of June we started a real project. This blog is partly a record for myself, and partly so that if you're a student thinking about doing something similar, you can see what it actually looks like, mess and all.
 
 **So what's the project?**
 
-It's about pressure mats and how people sleep. If you put a grid of pressure sensors under someone lying in bed, you can tell whether they're on their back, their left side, or their right side. That sounds small, but it matters a lot in healthcare. People who can't move much on their own, like patients in hospitals or elderly people in care, can get pressure ulcers (bed sores) if they stay in one position too long. Knowing their posture, automatically and all night, helps prevent that.
+It's about sleep, and about how to watch over someone's sleep without bothering them. How a person lies in bed matters more than it sounds. People who can't move much on their own, like patients in hospitals or elderly people in care, can get pressure ulcers (bed sores) if they stay in one position too long. For a lot of people with sleep apnea, lying on their back makes the breathing pauses worse. Knowing someone's posture, automatically and all night, can help with both.
 
-The catch is that the good pressure mats are expensive. The high-resolution medical ones have thousands of sensors and cost a lot, which is fine for a hospital but not for a regular home or a low-budget clinic.
+The catch is cost and comfort. A sleep lab gives you the best picture, but it means a night full of wires. Cameras raise obvious privacy questions in a bedroom. The good sensing equipment is expensive, which is fine for a hospital but not for a regular home.
 
-So the question I've been chasing is basically: **how cheap can you make the mat before it stops working?** If you cut the number of sensors way down, does the classification fall apart, or does it hold up? And "resolution" turns out to hide two very different things: is it about how *densely* packed the sensors are, or how much of the body the mat actually *covers*? Those aren't the same, and pulling them apart has been one of the more interesting parts of the whole thing.
+So the question I want to chase is basically: **how cheap and simple can sleep monitoring get before it stops being useful?** My first idea for answering it uses a small radar next to the bed, with no camera and nothing to wear. I'm still working out exactly what the research question should be, and that's what the next few posts are about.
 
-If cheap, low-resolution mats can do the job well enough, that's a real win, because then this kind of monitoring becomes something a lot more people can actually afford.
+If cheap, simple sensing can do the job well enough, that's a real win, because then this kind of monitoring becomes something a lot more people can actually afford.
 
 **One honest thing before I go further.**
 
-I'm writing this in late August 2026, but I didn't start the project now. It actually kicked off back in late June. So this blog is a bit of a rewind: I'm going to go back to the beginning and walk through the whole thing more or less in order, the decisions, the experiments, the parts that broke, and slowly catch up to where I am today. That means the next few posts are about things that already happened, and I'll say roughly when each one took place so it doesn't get confusing.
+I'm writing these posts after the fact, so each one is dated roughly to when it happened, and they go through the project more or less in order: the decisions, the experiments, and the parts that broke.
 
-Right now, where things stand: the core experiments on the main dataset are done, I've just finished checking two more datasets to test whether the findings hold up elsewhere, and I've started writing everything up properly. There's still a fair bit left. I'll get into all of it.
-
-I'm going to post a bit more often for the next couple of weeks to catch up, then settle into a steadier pace once the blog reaches the present.
-
-If any of this sounds interesting, stick around. Next post: why I threw out my original project idea and switched to this one.
+If any of this sounds interesting, stick around. Next post: the three directions I kept going back and forth between at the start.

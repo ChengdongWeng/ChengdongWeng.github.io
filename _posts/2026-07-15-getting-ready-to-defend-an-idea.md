@@ -1,6 +1,6 @@
 ---
 title: "Getting ready to defend an idea"
-date: 2026-07-15
+date: 2026-07-07
 categories: blog
 tags: research
 toc: false
@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/default-teaser.jpg
 ---
 
-The meeting with my mentor was on July 16. The day before, I had my plan, A and B combined, and I needed to turn it into something he could read and poke holes in. I was nervous. I'd never had to defend a research idea to someone who does research for a living.
+The meeting with my mentor was coming up in a few days. I had my plan, A and B combined, and I needed to turn it into something he could read and poke holes in. I was nervous. I'd never had to defend a research idea to someone who does research for a living.
 
 He'd asked for two things, so I wrote two documents. One was the research question and protocol: what I wanted to find out, what data I'd use, and how I'd evaluate it. The other was a study outline with a timeline. Both went through a lot of drafts. I cut direction C out completely instead of leaving half a section about it, made both documents shorter, and wrote the limits in plainly: at most 15 adult participants, short recording sessions, nothing overnight and nothing medical. Then I sent them with a short email so he'd have time to read them first.
 
@@ -27,4 +27,4 @@ I was pretty sure he'd also ask how I would avoid the same mistakes I was pointi
 
 The last thing was a plan for the meeting itself. Start with the overall structure, not the details. Show the fallback, so it's clear the project still works even if the hardware doesn't. Hand him my open questions and let him steer. Then stop talking and listen. I wrote that last step down on purpose, because I knew I'd want to keep explaining.
 
-I went to bed feeling about as ready as I could be. Almost none of the radar plan survived the next day. The four rules did, though, and I still check everything in this project against them.
+I went to bed feeling about as ready as I could be.
