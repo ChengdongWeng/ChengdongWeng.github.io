@@ -20,7 +20,7 @@ date_format: "%B %-d, %Y"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
 title                    : "Chengdong's Sensing Sleep Research Blog"
 title_separator          : "-"
-subtitle                 : "Cutting sensor cost without losing the signal: a high-schooler's lab notebook on pressure-mat AI."
+subtitle                 : "Cutting sensor cost without losing the signal: a high-schooler's lab notebook on pressure-mat sleep sensing."
 name                     : "Chengdong Weng"
 description              : "Research blog on low-cost, low-resolution pressure-mat sleep-posture sensing."
 url                      : "https://chengdongweng.github.io"
@@ -313,7 +313,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: false
       show_date: true
       comments: # true
