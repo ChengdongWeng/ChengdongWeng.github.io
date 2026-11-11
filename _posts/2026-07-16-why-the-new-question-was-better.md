@@ -20,6 +20,10 @@ My mentor didn't just say "try pressure mats." He gave me actual steps. Find a p
 
 I wrote both ways down as two separate steps on my list.
 
+![A made-up body on a sensor grid: the full mat, a smaller mat, and the same mat with fewer sensors.](/assets/images/two-ways-to-make-a-mat-worse.png)
+
+*The two ways to make a mat worse, drawn on a made-up body (not real data). Middle: the mat shrinks and covers less. Right: the mat stays the same size but has fewer sensors, spaced further apart.*
+
 When I compared it with the radar plan, the difference was obvious. Radar had a question, but the steps to answer it were fuzzy: figure out how to collect data, build a model, hope the cheap board is good enough. This one had a question and a method, and I could start on every step of it right away. That's what made it feel doable instead of just ambitious.
 
 It's also a real problem. Hospitals already use pressure mats to help prevent pressure sores, and they show up in some sleep trackers too. Good mats have thousands of sensors and cost a lot. If a mat with only a few dozen sensors could tell how someone is lying, that's a cheap product somebody could actually build. And I liked that either answer would be useful. If low resolution works, a cheap mat is enough. If it breaks at some point, then everyone knows where the line is.

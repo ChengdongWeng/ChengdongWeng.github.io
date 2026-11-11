@@ -61,6 +61,10 @@ plt.colorbar()
 plt.show()
 ```
 
+![A 32 by 64 grid of random numbers drawn as a heatmap.](/assets/images/fake-heatmap.png)
+
+*My first "pressure map": random numbers, seed 42.*
+
 It looked like static on an old TV, nothing like a person. I was still happier than I should have been, because it meant Python, NumPy, matplotlib and Jupyter were all working together.
 
 The last thing that night was the data. I started with PMD, the Pressure Map Dataset on PhysioNet, where 13 people lay in 17 postures on a mat with 2,048 sensors. It's only about 102 MB, so it downloaded fast. The folder had a very long name, so I renamed it to `pmd`.

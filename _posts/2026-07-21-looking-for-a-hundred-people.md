@@ -14,6 +14,10 @@ So before going to bed, I went looking.
 
 It didn't take long to see the whole field, because there isn't much of it. PMD has 13 people. A dataset from Georgia Tech has 17. PoPu, which I had already noticed because it records on two mats at once, has 60. SLP, from a lab at Northeastern, has 109. That was it. SLP was the only real dataset with more than a hundred people, and you have to apply for it.
 
+![Number of people in each real pressure-mat dataset: PMD 13, Georgia Tech 17, PoPu 60, SLP 109.](/assets/images/dataset-sizes.png)
+
+*The real pressure-mat datasets I could find, by number of people.*
+
 There were bigger ones, but they weren't real. One synthetic dataset has almost a hundred thousand pressure maps, made by simulating bodies lying on a mat with a physics engine. That sounds great until you remember that no actual person ever lay on that mat. If my result only held on simulated people, I wouldn't trust it, and I doubt my mentor would either.
 
 My honest reaction was something like: there are eight billion people on this planet, and this is all we have? It made more sense once I thought about what it takes to build one of these datasets. You need a mat that costs thousands of dollars, ethics approval, a lab, and a lot of people willing to lie down in a dozen positions while someone records them. Not many groups do that, and even fewer release the data.
