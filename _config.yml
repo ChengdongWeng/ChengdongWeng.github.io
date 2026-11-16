@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "en-US"
@@ -317,6 +317,10 @@ defaults:
       classes: wide
       read_time: false
       show_date: true
+      header:
+        overlay_image: /assets/images/post-banner.jpg
+        overlay_filter: "linear-gradient(90deg, rgba(12, 28, 48, 0.75) 0%, rgba(12, 28, 48, 0.35) 55%, rgba(12, 28, 48, 0) 100%)"
+        show_overlay_excerpt: false
       comments: # true
       share: true
       related: true
