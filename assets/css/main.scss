@@ -7,3 +7,84 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Custom styles for this blog
+   ========================================================================== */
+
+$post-column: 860px;
+
+/* Post pages: one centered reading column, no sidebar
+   (posts get the "wide" class from _config.yml, other pages are not affected) */
+.layout--single.wide {
+  .page,
+  .page__related {
+    float: none;
+    width: 100%;
+    max-width: $post-column;
+    margin-inline: auto;
+    padding-inline-end: 0;
+  }
+}
+
+/* Banner at the top of each post: line the title up with the text column */
+.layout--single.wide .page__hero--overlay {
+  padding: 4em 0 3.5em;
+
+  .wrapper {
+    max-width: $post-column;
+    margin-inline: auto;
+    padding-inline: 1em;
+
+    @include breakpoint($large) {
+      padding-inline: 0;
+    }
+  }
+
+  .page__title {
+    font-size: $type-size-2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  }
+
+  .page__meta {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* Body text */
+.page__content {
+  line-height: 1.75;
+
+  p {
+    margin-bottom: 1.3em;
+  }
+
+  /* Figures: centered, rounded, soft shadow */
+  p > img {
+    display: block;
+    margin: 2em auto 0.6em;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  /* The italic line right under a figure becomes a centered caption */
+  p:has(> img) + p > em:only-child {
+    display: block;
+    margin: 0 auto 2em;
+    max-width: 90%;
+    text-align: center;
+    font-size: $type-size-6;
+    color: $muted-text-color;
+  }
+
+  pre,
+  div.highlighter-rouge {
+    border-radius: 8px;
+  }
+}
+
+/* "You may also enjoy" cards */
+.page__related .archive__item-teaser {
+  border-radius: 8px;
+}
