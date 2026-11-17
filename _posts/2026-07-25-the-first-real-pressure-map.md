@@ -14,9 +14,13 @@ The first thing I printed was the range of the numbers. The dataset's page said 
 
 Then I turned one frame into a picture. Each line in the file has 2,048 numbers, and my notes from setup night said to fold them into 32 rows of 64. I didn't know which way the body ran, so I plotted the frame twice: once as it came out, 32 by 64, and once flipped on its side, 64 by 32.
 
-The flipped version looked like a person, or at least I thought it did. I could see a bright area at the top, a bigger one in the middle and another one lower down, which I read as head and shoulders, torso and hips. The other version was stranger. It looked like two bodies lying side by side.
+The flipped version looked like a person, or at least I thought it did. There were two bright areas, one near the top and one lower down, with a darker gap between them. I read them as shoulders and hips. The other version was stranger. It looked like two bodies lying side by side.
 
-That was a bit strange. The explanation I went with was symmetry. This was someone lying on their back, so the left and right halves of the body press into the mat in almost the same way, and that could make the picture look doubled. It sounded reasonable, the flipped version looked fine, and I wanted to get on with the project.
+![Subject 1, posture 1, middle frame. Left: plotted as loaded, 32 by 64. Right: the same frame flipped, 64 by 32.](/assets/images/first-real-map.png)
+
+*Subject 1, posture 1, middle frame. Left: plotted as loaded, 32 by 64. Right: the same frame flipped on its side.*
+
+The two-bodies picture was a bit strange. The explanation I went with was symmetry. This was someone lying on their back, so the left and right halves of the body press into the mat in almost the same way, and that could make the picture look doubled. It sounded reasonable, the flipped version looked fine, and I wanted to get on with the project.
 
 I also averaged all the frames of the recording into one picture, plus a second picture showing every sensor that was ever touched. Those looked more like an outline of a body, which made me even more confident that the data was being read correctly.
 
