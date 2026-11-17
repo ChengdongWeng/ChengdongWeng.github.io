@@ -258,3 +258,129 @@ $post-column: 860px;
     }
   }
 }
+
+/* ==========================================================================
+   About page
+   ========================================================================== */
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+  margin: 0.5em 0 2em;
+  padding: 1.6em;
+  border-radius: 12px;
+  background: #fff;
+  border-top: 4px solid #1c5a78;
+  box-shadow: 0 6px 24px rgba(22, 58, 95, 0.12);
+  text-align: center;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  &__avatar {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .page__content &__name {
+    margin: 0 0 0.2em;
+    padding: 0;
+    border: none;
+    font-size: 1.5em;
+  }
+
+  &__bio {
+    margin: 0 0 0.8em;
+    color: $muted-text-color;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+
+    @include breakpoint($medium) {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.page__content .about-link {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  border-radius: 999px;
+  font-size: 0.85em;
+  text-decoration: none;
+  color: #1c5a78;
+  background: #eef4f8;
+
+  &:hover {
+    color: #fff;
+    background: #1c5a78;
+  }
+}
+
+.page__content .about-question {
+  margin: 1em 0 1.3em;
+  padding: 0.8em 1.2em;
+  border-left: 4px solid #ff8a4c;
+  border-radius: 0 10px 10px 0;
+  background: #fff6f0;
+  font-size: 1.15em;
+  font-weight: bold;
+  font-style: normal;
+  color: $text-color;
+}
+
+.about-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin: 1.2em 0 0;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    padding: 1.1em 1.2em;
+    border-radius: 12px;
+    background: #f5f8fb;
+    border: 1px solid rgba(22, 58, 95, 0.08);
+    text-decoration: none;
+    color: $text-color;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    strong {
+      font-size: 1.1em;
+    }
+
+    span:last-child {
+      font-size: 0.9em;
+      color: $muted-text-color;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(22, 58, 95, 0.12);
+    }
+  }
+}
+
+.page__content a.about-nav__card {
+  text-decoration: none;
+}
