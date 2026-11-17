@@ -10,9 +10,13 @@ header:
 
 Before telling anyone about the upside-down U, I wanted more than one kind of evidence for it. One curve can look convincing by accident, especially with only 13 people.
 
-The first check was about information. If averaging sensors helped because it threw away things that didn't matter, I should be able to measure how much it threw away. I compared each smaller picture with the original full-resolution one using normalized mutual information, which is roughly a score from 0 to 1 for how much of one picture you could work out from the other. At 4 by 8 the score was 0.17. About 83 percent of the information in the original picture was gone, and the best models lost only 2 to 3 points of macro-F1. Most of what the full mat records apparently has nothing to do with posture.
+The first check was about information. If averaging sensors helped because it threw away things that didn't matter, I should be able to measure how much it threw away. I compared each smaller picture with the original full-resolution one using normalized mutual information, which is roughly a score from 0 to 1 for how much of one picture you could work out from the other. At 4 by 8 the score was 0.17. About 83 percent of the information in the original picture was gone, and the random forest only went from 0.974 to 0.935 macro-F1. Most of what the full mat records apparently has nothing to do with posture.
 
 The second check was about confidence. A model gives a probability with every answer, and a well-behaved model that says it is 90 percent sure should be right about 90 percent of the time. The size of the gap between those two is called calibration error, or ECE. At full resolution the ResNet's ECE was 0.175, and in 7 of the 13 rounds it was above 0.1. At 10 by 21 it dropped to 0.018, about ten times smaller. So at full resolution the ResNet was not only wrong more often, it was also very sure of its wrong answers. That is what overfitting usually looks like.
+
+![Left: how much structure and information survive at each resolution. Right: calibration error of four neural networks at each resolution.](/assets/images/v1-information-and-calibration.png)
+
+*Left: how much of the original picture survives as sensors are averaged together. Right: calibration error for the four neural networks. The ResNet and the small CNN are worst at full resolution.*
 
 The third check was for the models whose curves looked flat. I ran a statistical test for a break point, the place where a curve suddenly changes slope, and it found no evidence of one for the random forest, XGBoost or PointNet. I had to be careful with what that means. It doesn't prove there is no break point. It only says this data doesn't show one, so in my notes I wrote "no evidence of a breakpoint" and not "there is no breakpoint."
 
@@ -22,4 +26,4 @@ Then I wanted to save all of it properly. After losing the first run, this felt 
 
 The last step was a backup somewhere other than my laptop. I made a private repository on GitHub and pushed everything to it. The push failed at first because git was still set to an old proxy port that I wasn't using anymore. Once I gave it the right port for that one command, it went through.
 
-I also sent my mentor an update email with the main numbers. The next step was the experiment that could separate the two explanations.
+I also sent my mentor an update email with the main numbers. By then the experiment that could separate the two explanations was already running.

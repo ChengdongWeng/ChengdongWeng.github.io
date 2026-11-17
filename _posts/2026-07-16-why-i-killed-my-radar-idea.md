@@ -39,7 +39,3 @@ Everything that made radar impossible went the other way here. Public datasets a
 It also gave me a sharper question. Instead of "can radar do everything," I get one clean and useful one: how much sensor resolution does sleep-posture sensing actually need? Can a cheap, low-resolution mat do as well as an expensive high-resolution one?
 
 That question is the whole project now. I'm not fully sure yet whether it's a better project or just a smaller one. More on that in the next post.
-
----
-
-*A quick note on the date: like the other early posts, this one is dated roughly to when it happened, even though I'm writing it up later. I explain why in the [welcome post](/blog/welcome-and-why-im-writing-this/).*

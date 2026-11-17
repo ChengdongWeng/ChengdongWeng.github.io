@@ -18,7 +18,11 @@ The ResNet came back. At full resolution it went from 0.803 to 0.967, almost as 
 
 The small CNN didn't. It went from 0.867 to 0.873, which is basically no change. With all three settings, something was still costing it about ten points at full resolution, something that averaging could fix and better training couldn't. That points to the second explanation, that the full-resolution picture carries detail that has nothing to do with posture and actually gets in the way. I started calling this the information effect. The readings at the 4,095 ceiling were still on my list as one possible part of it.
 
-The other two networks hardly changed, plus 0.013 for the Transformer model and plus 0.016 for PointNet. That was what I hoped to see, because they never had the upside-down U in the first place. If the new settings had suddenly raised every model, I would have had to suspect the settings themselves.
+![Macro-F1 of four neural networks at six resolutions, before and after adding the three regularization settings.](/assets/images/v2-before-after.png)
+
+*Gray dashed: the first run. Colored: the same model with the three extra settings. Only the ResNet changes much at full resolution.*
+
+The other two networks hardly changed. The Transformer model went from 0.933 to 0.946 at full resolution, and PointNet from 0.939 to 0.955. That was what I hoped to see, because they never had the upside-down U in the first place. If the new settings had suddenly raised every model, I would have had to suspect the settings themselves.
 
 My first reaction to the mixed result was disappointment. I wanted one clean explanation, and instead each model had its own. After thinking about it for a day, I changed my mind. The mixed answer says the upside-down U is two separate things that happen to look the same on a graph. If I had only tested one of the two models, I would have told half of the story and believed it was all of it.
 

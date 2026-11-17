@@ -8,13 +8,17 @@ header:
   teaser: /assets/images/default-teaser.jpg
 ---
 
-The rerun finished without a single failure. All 1,638 runs were in the CSV this time, and I checked the row count twice before I let myself look at anything else.
+The rerun finished without a single failure, but it took three tries. The first one stopped after only 49 runs, when my laptop shut down partway through. I think it overheated. That was careless of me, and it stuck with me. The second try ran for about a day before I noticed that every XGBoost run had failed, 229 of them. I had changed XGBoost's settings so it would train on the GPU, using the name gpu_hist, and the version of XGBoost I had installed doesn't accept that name anymore. The other six models were fine. I fixed the setting and started the whole run again in a fresh file. This time all 1,638 runs were in the CSV, and I checked the row count twice before I let myself look at anything else.
 
 Going in, I expected a simple picture. With fewer sensors the models would get worse, and somewhere along the way there would be a point where they fell apart. Finding that point for each posture was the whole goal of the experiment. The six resolutions went from the full 32 by 64 mat, which is 2,048 sensors, down to 4 by 8, which is 32. To make each smaller version I averaged neighboring sensors together, so the mat keeps its size and just has fewer, bigger sensors.
 
 The first thing I noticed was that there was no point where things fell apart. The random forest scored 0.974 macro-F1 at full resolution. At 32 sensors, 64 times fewer, the best models were still above 0.92. The random forest and XGBoost barely moved across all six levels, and PointNet and the Transformer model looked about the same. I had been ready to write something like "side postures need at least this many sensors," and the data didn't have a line like that in it at all.
 
 The second thing was stranger. Two models did worst at full resolution. The ResNet scored 0.803 with all 2,048 sensors, second to last of the seven. At a third of the resolution in each direction, 10 by 21, it scored 0.980, the highest number in the whole experiment. The small CNN did the same thing on a smaller scale, from 0.867 at full resolution to 0.976 at 10 by 21. Plotted against resolution, both of them went up and then came back down, like an upside-down U.
+
+![Macro-F1 of all seven models on PMD at six resolutions, from 32 to 2,048 sensors.](/assets/images/v1-curves.png)
+
+*Each line is one model, averaged over 13 rounds and 3 seeds. The two thick lines are the ResNet and the small CNN.*
 
 I had seen a hint of this before. When I looked at the partial results of the first run, at around 576 finished runs, the same two models were already doing worst at full resolution. I couldn't tell then whether it was real or just noise from an unfinished experiment. Now it was the complete experiment, with all 13 people and 3 seeds each, and it was still there.
 
